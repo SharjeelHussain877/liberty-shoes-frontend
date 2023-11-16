@@ -1,0 +1,355 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* Profile */
+.topicon {
+  width: 100%;
+  height: 40px;
+  background-color: #bdc3c7;
+}
+.topicon .user {
+  color: #909497;
+  position: relative;
+  top: 16%;
+  left: 89%;
+}
+.topicon .user .pro {
+  font-size: 18px;
+  font-family: cursive;
+}
+.topicon .user:hover {
+  cursor: pointer;
+  color: #515a5a;
+  font-size: 10px;
+}
+/* Navigation Bar */
+.nav {
+  z-index: 99;
+  position: sticky;
+  top: -7px;
+  background-color: white;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+.navbar {
+  width: 1200px;
+  height: 75px;
+  margin: auto;
+}
+.icon {
+  width: auto;
+  float: left;
+  height: auto;
+}
+.logo {
+  color: #2980b9;
+  font-size: 27px;
+  font-family: arial;
+  float: left;
+  padding-top: 16.6%;
+}
+.logo span {
+  color: #2c3e50;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+ul li {
+  margin-left: 6.4%;
+  margin-top: 4%;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover {
+  color: #2980b9;
+}
+.menu ul li a span {
+  color: #2980b9;
+  padding: 10px 20px 10px 20px;
+  background-color: #263442;
+  border-radius: 50px;
+}
+.menu ul li a span:active {
+  background-color: #415870;
+  color: white;
+}
+.search {
+  margin-left: 78%;
+  height: auto;
+  width: 26%;
+  border: 1px solid #2980b9;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: white;
+  position: relative;
+  top: -40px;
+}
+.search i {
+  cursor: alias;
+}
+input {
+  border: none;
+  height: 53.4%;
+  width: 59%;
+  font-size: 21px;
+  font-family: "Times New Roman", Times, serif;
+  background: white;
+}
+input:focus {
+  outline: none;
+}
+.btn {
+  width: 90px;
+  height: 42px;
+  background-color: #2c3e50;
+  color: white;
+  font-size: 20px;
+  border: 1px solid white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: all 0.4s ease;
+}
+.btn:hover {
+  background-color: #0076c5;
+}
+/* Gallery */
+.gallery {
+  margin: 10% 5% 10% 5%;
+  display: flex;
+  height: 20rem;
+  gap: 1rem;
+}
+.gallery > div {
+  cursor: pointer;
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+.gallery > div:hover {
+  flex: 4;
+}
+.collection {
+  width: auto;
+  padding: 1% 0% 7% 4%;
+}
+.collection .cat {
+  background-image: linear-gradient(#d0d3d4, rgb(240, 240, 240));
+  border-radius: 20px;
+  height: 100%;
+  width: 96%;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.collection .cat .gig {
+  height: auto;
+  width: 280px;
+  margin-top: 4%;
+  flex-shrink: 1;
+  margin-left: 2.4%;
+}
+.collection .cat .gig a {
+  text-decoration: none;
+  color: black;
+}
+.collection .cat .gig img {
+  box-shadow: 10px 10px 15px gray;
+  border: 0px solid;
+  cursor: pointer;
+  height: 260px;
+  width: 240px;
+  max-width: 100%;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  overflow: hidden;
+  transition: all 0.4s;
+  transform: scale(1);
+}
+.collection .cat .gig img:hover {
+  transform: scale(1.05);
+}
+.collection .cat .gig .t {
+  height: 40px;
+  font-family: arial;
+  font-weight: bold;
+}
+.collection .cat .gig .t:hover {
+  color: #d35400;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.collection .cat .gig .rs {
+  font-family: Arial;
+  font-weight: 600;
+}
+.collection .cat .gig .rs del {
+  color: rgb(110, 110, 110);
+}
+.collection .cat .gig button {
+  font-family: cursive;
+  font-size: 16px;
+  color: black;
+  position: relative;
+  left: 20px;
+  height: 33px;
+  width: 105px;
+  background-color: #909497;
+  border: transparent;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+.collection .cat .gig button:hover {
+  cursor: not-allowed;
+  border: 1px solid black;
+  background-color: #bdc3c7;
+}
+.collection .cat .gig button:active {
+  background-color: black;
+  color: white;
+}
+/* Footer */
+.footer {
+  width: 100%;
+  height: 400px;
+  background-color: #17202a;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .sec {
+  margin-top: 50px;
+}
+.footer .sec li {
+  list-style: none;
+  color: #909497;
+  font-family: Poppins, sans-serif;
+  font-size: 0.8em;
+  border-bottom: 1px solid #909497;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  cursor: pointer;
+}
+.footer .sec li a {
+  text-decoration: none;
+  color: white;
+}
+.footer .sec font {
+  list-style: none;
+  color: #909497;
+  font-family: Poppins, sans-serif;
+  font-size: 0.8em;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.footer .sec font:hover {
+  color: #dfe1e2;
+}
+.footer .sec li .sign {
+  visibility: hidden;
+}
+.footer .sec li:hover .sign {
+  visibility: visible;
+  animation-name: sign;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes sign {
+  0% {
+    position: relative;
+    left: 0px;
+  }
+  50% {
+    position: relative;
+    left: -10px;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+  }
+}
+.footer .sec li:hover {
+  color: #dfe1e2;
+}
+.footer .sec .tf {
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+}
+.fa-facebook {
+  padding: 13px 13px;
+  font-size: 23px;
+  width: 23px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #3b5998;
+  color: white;
+}
+.fa-facebook:hover {
+  opacity: 0.7;
+}
+.fa-twitter {
+  padding: 13px;
+  font-size: 23px;
+  width: 23px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #55acee;
+  color: white;
+}
+.fa-twitter:hover {
+  opacity: 0.7;
+}
+.fa-instagram {
+  padding: 13px;
+  font-size: 23px;
+  width: 23px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-image: url(../image/instabg.jpg);
+  background-size: cover;
+  color: white;
+}
+.fa-instagram:hover {
+  opacity: 0.7;
+}
+.sec abbr {
+  font-size: 50px;
+  color: #17202a;
+}
+.sec .top {
+  color: #d0d3d4;
+  padding-top: 20px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 14px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #2c3e50;
+  position: relative;
+  left: 46px;
+  top: 10px;
+  transition: all 0.3s;
+}
+.sec .top:hover {
+  background-color: #3f5870;
+}
